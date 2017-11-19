@@ -26,4 +26,5 @@ def show_encrypted():
     return render_template('show_encrypted.html',ciphertext=ciphertext)
 
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
