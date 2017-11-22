@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('back.jpg') no-repeat 50% 50%;
+  display: table;
+  background-size: cover;
+}
+.inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.intro .content{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+.intro .content h1{
+  font-family: 'Yantramanav', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 700%;
+  font-weight: 300;
+}
+.btn {
+  font-family: 'Oswald', sans-serif;
+  color: #036A81;
+  font-size: 150%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+.btn:hover{
+  color: orange;
+}
+
+.resintro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('result.jpg') no-repeat 50% 50%;
+  display: table;
+  background-size: cover;
+}
+
+.resintro .content{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  padding-left: 45%;
+  padding-bottom: 2%;
+}
+
+.resintro .content h1{
+  font-family: 'Raleway', sans-serif;
+  color: #007ba7;
+  margin: 0;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 700%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.content h2{
+  font-family: 'Montserrat', sans-serif;
+  color: green;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 200%;
+  font-weight: 300;
+}
