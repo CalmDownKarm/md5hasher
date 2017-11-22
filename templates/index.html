@@ -1,11 +1,42 @@
-{% extends "layout.html" %}
-{% block body %}
-  <h2>Enter Text</h2>
-  <form action="{{ url_for('home') }}" method=post>
-    <dl>
-      <dt>Message:
-      <dd><input type=text name=message>
-      <dd><input type=submit value=index>
-    </dl>
-  </form>
-{% endblock %}
+<!DOCTYPE html>
+<head>
+  <title>MD5 Hasher</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-orange.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+  <section class="intro">
+    <div class="inner">
+      <div class="content">
+        <h1>MD5 Hasher</h1>
+        <form action="" method="post">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="message" value="{{ request.form.message }}">
+            <label class="mdl-textfield__label" for="message">Write message here</label>
+          </div>
+          <input id="show-toast" class="btn" type="submit" value="Encrypt">
+        </form>
+      </div>
+    </div>
+  </section>
+  <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+  </div>
+</body>
+<script>
+(function() {
+  var snackbarContainer = document.querySelector('#toast');
+  var showToastButton = document.querySelector('#show-toast');
+  showToastButton.addEventListener('click', function() {
+    snackbarContainer.MaterialSnackbar.showSnackbar(
+      {
+        message: 'Encrypting'
+      }
+    );
+  });
+}());
+</script>
+</html>
